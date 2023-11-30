@@ -4,3 +4,15 @@
     position: absolute;
 }
 
+.sub-label{
+    display: block;
+}
+
+.form__group{
+    display: flex;
+}
+
+.group{
+    padding: 11px;
+}
+

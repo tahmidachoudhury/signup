@@ -10,38 +10,58 @@
     <div class="panel">
         <form action="example.com" method="post">
             <fieldset>
-                <legend>Login Details</legend>
+                <legend>Parent Details</legend>
                 
-                <div class="form__group">
-                    <label for="first_name">First Name</label>
-                    <input type="name" id="first_name" name="first_name" placeholder="John">
-                </div>
-                 
-                <div class="form__group">
-                    <label for="last_name">Last Name</label>
-                    <input type="name" id="last_name" name="last_name" placeholder="Doe">
+                <div class="group one">
+                    <label class="form__group__title">Name</label>
+                    <div class="form__group">
+                        <span class="name sub-label-container">
+                            <input type="name" id="first_name" name="first_name" placeholder="John">
+                            <label class="sub-label" for="first_name">First Name</label>
+                        </span>
+                        <span class="name">
+                            <input type="name" id="last_name" name="last_name" placeholder="Doe">
+                            <label class="sub-label" for="last_name">Last Name</label>    
+                        </span>
+                    </div>    
                 </div>
                 
-                <div class="form__group">
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com">
-                </div>
-                 
-                <div class="form__group">
-                    <label for="phonenumber">Phone Number</label>
-                    <input type="number" id="phonenumber" name="phonenumber" placeholder="07123 456 789">
-                </div>    
                 
-                <div class="form__group">
-                    <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="user_password">
+                <div class="group two">
+                    <div class="form__group">
+                        <span class="email">
+                            <div class="title">
+                                <label class="form__group__title">Email</label>
+                            </div>
+                            <input type="email" id="email" name="email">
+                            <label class="sub-label" for="email">example@example.com</label>
+                        </span>
+                        <span class="phonenumber">
+                            <div class="title">
+                                <label class="form__group__title">Phone Number</label>
+                            </div>
+                            <input type="text" id="phonenumber" name="phonenumber" placeholder="(000) 000-0000">
+                        </span>
+                    </div>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Student Details</legend>
+                
+                <div class="group one">
+                    <label class="form__group__title">Type of Tuition</label>
+                    <div class="form__group">
+                        <span class="options sub-label-container">
+                            <select name="tuition-type">
+                                <option value="default" selected>Please select</option>
+                                <option value="online">Online</option>
+                                <option value="in-person">in-person</option>
+                            </select>
+                            <label class="sub-label" for="first_name">First Name</label>
+                        </span>
+                    </div>    
                 </div>
-                 
-                <div class="form__group">
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
-                </div>
-                    
+
             </fieldset>
     
         </form>
