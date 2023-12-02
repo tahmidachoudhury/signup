@@ -19,6 +19,7 @@
 .subject__group{
     display: flex;
     justify-content: space-between;
+    margin-top: 11px;
     border: 1px solid;
 }
 
