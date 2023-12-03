@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 .panel{
     display: flex;
     flex-direction: column;
@@ -23,3 +27,14 @@
     border: 1px solid;
 }
 
+.panel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    width: 100%;
+
+}
