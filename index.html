@@ -8,149 +8,155 @@
 </head>
 <body>
     <div class="hero">
-        <img src="https://media1.giphy.com/media/RLDtfsEcccsgBmIAWa/giphy.gif?cid=ecf05e47kv4ftnu05tgywclhu9cbhr0enhgn62co27878509&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+        <!--<img class="background" src="https://media1.giphy.com/media/RLDtfsEcccsgBmIAWa/giphy.gif?cid=ecf05e47kv4ftnu05tgywclhu9cbhr0enhgn62co27878509&ep=v1_gifs_search&rid=giphy.gif&ct=g">-->
     </div>
-    <div class="panel">
-        <form action="###" method="post">
-            <fieldset>
-                <legend>Parent Details</legend>
-                
-                <div class="group one">
-                    <label class="form__group__title">Name</label>
-                    <div class="form__group">
-                        <span class="name sub-label-container">
-                            <input type="name" id="first_name" name="first_name" placeholder="John">
-                            <label class="sub-label" for="first_name">First Name</label>
-                        </span>
-                        <span class="name">
-                            <input type="name" id="last_name" name="last_name" placeholder="Doe">
-                            <label class="sub-label" for="last_name">Last Name</label>    
-                        </span>
-                    </div>    
-                </div>
-                
-                
-                <div class="group two">
-                    <div class="form__group">
-                        <span class="email">
-                            <div class="title">
-                                <label class="form__group__title">Email</label>
-                            </div>
-                            <input type="email" id="email" name="email">
-                            <label class="sub-label" for="email">example@example.com</label>
-                        </span>
-                        <span class="phonenumber">
-                            <div class="title">
-                                <label class="form__group__title">Phone Number</label>
-                            </div>
-                            <input type="text" id="phonenumber" name="phonenumber" placeholder="00 000 000000">
-                        </span>
-                    </div>  
-            </fieldset>
-
-            <fieldset>
-                <legend>Student Details</legend>
-                
-                <div class="group three">
-                    <label class="form__group__title">Type of Tuition</label>
-                    <div class="form__group">
-                        <span class="options sub-label-container">
-                            <select name="tuition-type">
-                                <option value="default" selected>Please select</option>
-                                <option value="online">Online</option>
-                                <option value="in-person">In-person</option>
-                            </select>
-                        </span>
-                    </div>    
-                </div>
-
-                <div class="group four">
-                    <div class="title">
-                        <label class="form__group__title">Subject</label>
+    <main>
+        <section class="media-container">
+            <img class="images" src="images/girl_studying.jpg">
+        </section>
+        <section class="panel">
+            <form action="###" method="post">
+                <fieldset>
+                    <legend>Parent Details</legend>
+                    
+                    <div class="group one">
+                        <label class="form__group__title">Name</label>
+                        <div class="form__group">
+                            <span class="name sub-label-container">
+                                <input type="name" id="first_name" name="first_name" placeholder="John">
+                                <label class="sub-label" for="first_name">First Name</label>
+                            </span>
+                            <span class="name">
+                                <input type="name" id="last_name" name="last_name" placeholder="Doe">
+                                <label class="sub-label" for="last_name">Last Name</label>    
+                            </span>
+                        </div>    
                     </div>
                     
-                    <div class="options sub-label-container">
-                        <div class="subject__group">
-                            <span>
-                                <input type="radio" id="alevel" name="subject" value="alevel">
-                                <label for="alevel">A-Level</label>    
+                    
+                    <div class="group two">
+                        <div class="form__group">
+                            <span class="email">
+                                <div class="title">
+                                    <label class="form__group__title">Email</label>
+                                </div>
+                                <input type="email" id="email" name="email">
+                                <label class="sub-label" for="email">example@example.com</label>
                             </span>
-                            <span>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="alevel.m">Maths</label>
+                            <span class="phonenumber">
+                                <div class="title">
+                                    <label class="form__group__title">Phone Number</label>
                                 </div>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="alevel.c">Chemistry</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="alevel.p">Physics</label>
-                                </div>
+                                <input type="text" id="phonenumber" name="phonenumber" placeholder="00 000 000000">
                             </span>
+                        </div>  
+                </fieldset>
+
+                <fieldset>
+                    <legend>Student Details</legend>
+                    
+                    <div class="group three">
+                        <label class="form__group__title">Type of Tuition</label>
+                        <div class="form__group">
+                            <span class="options sub-label-container">
+                                <select name="tuition-type">
+                                    <option value="default" selected>Please select</option>
+                                    <option value="online">Online</option>
+                                    <option value="in-person">In-person</option>
+                                </select>
+                            </span>
+                        </div>    
+                    </div>
+
+                    <div class="group four">
+                        <div class="title">
+                            <label class="form__group__title">Subject</label>
                         </div>
-                        <div class="subject__group">
-                            <span>
-                                <input type="radio" id="gcse" name="subject" value="gcse">
-                                <label for="gcse">GCSE</label>
-                            </span>
-                            <span>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="gcse.m">Maths</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="gcse.s">Science</label>
-                                </div>
-                            </span>    
-                        </div>
+                        
+                        <div class="options sub-label-container">
+                            <div class="subject__group">
+                                <span>
+                                    <input type="radio" id="alevel" name="subject" value="alevel">
+                                    <label for="alevel">A-Level</label>    
+                                </span>
+                                <span>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="alevel.m">Maths</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="alevel.c">Chemistry</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="alevel.p">Physics</label>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="subject__group">
+                                <span>
+                                    <input type="radio" id="gcse" name="subject" value="gcse">
+                                    <label for="gcse">GCSE</label>
+                                </span>
+                                <span>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="gcse.m">Maths</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="gcse.s">Science</label>
+                                    </div>
+                                </span>    
+                            </div>
 
-                        <div class="subject__group">
-                            <span>
-                                <input type="radio" id="ks3" name="subject" value="ks3">
-                                <label for="ks3">KS3 - Key Stage Three</label>
-                            </span>
-                            <span>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="ks3.m">Maths</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="ks3.s">Science</label>
-                                </div>
-                            </span>    
-                        </div>     
+                            <div class="subject__group">
+                                <span>
+                                    <input type="radio" id="ks3" name="subject" value="ks3">
+                                    <label for="ks3">KS3 - Key Stage Three</label>
+                                </span>
+                                <span>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="ks3.m">Maths</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="ks3.s">Science</label>
+                                    </div>
+                                </span>    
+                            </div>     
 
-                        <div class="subject__group">
-                            <span>
-                                <input type="radio" id="ks2" name="subject" value="ks2">
-                                <label for="ks2">KS2 - Key Stage Two</label>
-                            </span>
-                            <span>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="ks2.m">Maths</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
-                                    <label for="ks2.e">English</label>
-                                </div>
-                            </span>    
-                        </div>
+                            <div class="subject__group">
+                                <span>
+                                    <input type="radio" id="ks2" name="subject" value="ks2">
+                                    <label for="ks2">KS2 - Key Stage Two</label>
+                                </span>
+                                <span>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="ks2.m">Maths</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="ks2.e">English</label>
+                                    </div>
+                                </span>    
+                            </div>
 
 
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Submit</button>
                 </div>
-            </fieldset>
-
-            <div>
-                <button type="submit">Submit</button>
-            </div>
+        
+            </form>
+        </section>        
+    </main>
     
-        </form>
-    </div>
 
 
 </body>
