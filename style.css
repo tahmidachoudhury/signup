@@ -4,27 +4,55 @@
     src: url("fonts/AbrilFatface-Regular.ttf") format("opentype");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root.blue{
+    --treepeak-color: #a9a8a6;
+    --treepeak-bg: #2a3236;
+}
+
+:root.pink{
+    --treepeak-color: #905d4c;
+    --treepeak-bg: #d9bdb7;
+}
 
 *{
     margin: 0;
-    font-size: large;
-    color: white;
+    color: var(--treepeak-color);
+    background-color: var(--treepeak-bg);
+    font-family: 'Poppins', sans-serif;
 }
 
 .background{
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     position: absolute;
 }
 
 /*FORM PANEL------------------------------------------------------*/
 
+fieldset{
+    border: none;
+}
+
+fieldset.parent, fieldset.student{
+    border-left: 1px solid var(--treepeak-color);
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid var(--treepeak-color);
+}
+
 .sub-label{
     display: block;
+    font-size: 0.75rem;
 }
 
 .form__group{
     display: flex;
+    gap: 10px;
 }
 
 .group{
@@ -34,9 +62,14 @@
 .subject__group{
     display: flex;
     justify-content: space-between;
-    margin-top: 11px;
+    margin-top: 20px;
 
 }
+
+.subject__group:nth-child(1){
+    margin-top: 5px;
+}
+
 
 /*MAIN-CONTAINER-----------------------------------------------------------*/
 .brand{
@@ -51,8 +84,10 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    border: solid salmon 1px;
-    padding: 50px 0px 50px 50px;
+    padding: 2.5rem 3rem;
+    padding-left: 1rem;
+    border: 5px solid ;
+    border-radius: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -61,4 +96,13 @@ main{
 .images{
     max-width: 510px;
     min-height: 350px;
+}
+
+/*BUTTON------------------------------------------------------*/
+button{
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: var(--treepeak-color);
+    width: 100%;
+    height: 25px;
 }
