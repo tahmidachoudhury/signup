@@ -45,6 +45,7 @@ input{
     border-bottom: 1px solid var(--treepeak-color);
 }
 
+
 .sub-label{
     display: block;
     font-size: 0.75rem;
@@ -64,6 +65,12 @@ input{
     justify-content: space-between;
     margin-top: 20px;
 
+}
+
+.tuition-type{
+    width: 173px;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 .subject__group:nth-child(1){

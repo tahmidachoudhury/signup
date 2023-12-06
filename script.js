@@ -6,4 +6,7 @@ function setTheme() {
     root.className = newTheme;
   }
   
-document.querySelector('.theme-toggle').addEventListener('mouseenter', setTheme)
+document.querySelector('.theme-toggle').addEventListener('click', function (e) {
+  e.preventDefault();
+  setTheme();
+});
